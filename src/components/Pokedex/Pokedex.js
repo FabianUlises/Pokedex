@@ -4,15 +4,19 @@ import React from 'react'
 import Pokecard from '../pokecard/Pokecard';
 const Pokedex = (props) => {
   // Destructuring props
-  const {pokemon} = props;
+  const { pokemon, exp } = props;
   // Looping through pokeman and createing pokecard component to display on dom
   const displayPokemon = pokemon.map((item, i) => (
-  <Pokecard name={item.name} key={i} />
+  <Pokecard name={item.name} type={item.type} exp={item.base_experience} key={i} />
   ));
   return (
-    <div>
-      <h2>Pokedex</h2>
-      {displayPokemon}
+    <div className='pokedex'>
+      <h2 className='pokedex__title'>Pokedex</h2>
+      <p>Total Experience: {exp}</p>
+      <p></p>
+      <div className='pokedex-cards'>
+        {displayPokemon}
+      </div>
     </div>
   );
 };
