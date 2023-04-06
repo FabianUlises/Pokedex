@@ -6,8 +6,8 @@ const Pokedex = (props) => {
   // Destructuring props
   const {pokemon} = props;
   // Looping through pokeman and createing pokecard component to display on dom
-  const displayPokemon = pokemon.map((item) => (
-  <Pokecard name={item.name} />
+  const displayPokemon = pokemon.map((item, i) => (
+  <Pokecard name={item.name} key={i} />
   ));
   return (
     <div>
