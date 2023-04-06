@@ -1,5 +1,7 @@
 // Dependencies
 import React from 'react';
+// Styles
+import styles from './pokecard.css';
 // APIurl for pokemon image
 const POKE_API = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-vii/icons/";
 const Pokecard = (props) => {

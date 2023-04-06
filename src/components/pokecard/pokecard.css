@@ -1,0 +1,25 @@
+.pokecard {
+    background: whitesmoke;
+    padding: .8rem .4rem;
+    height: 175px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .8rem;
+    border-radius: 6px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.225);
+    transition: transform 250ms ease;
+}
+.pokecard:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.pokecard:hover > h5 {
+    color: purple;
+}
+.pokecard img {
+    width: 25%;
+}
+.pokecard h5 {
+    margin-block-end: auto;
+}
