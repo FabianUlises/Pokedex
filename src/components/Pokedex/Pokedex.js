@@ -2,6 +2,8 @@
 import React from 'react'
 // Components
 import Pokecard from '../pokecard/Pokecard';
+// Styles
+import styles from './pokedex.css'
 const Pokedex = (props) => {
   // Destructuring props
   const { pokemon, exp, isWinner } = props;
