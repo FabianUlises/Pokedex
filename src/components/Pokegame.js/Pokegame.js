@@ -1,9 +1,12 @@
 // Dependencies
 import React from 'react'
-
+// Components
+import Pokedex from './../Pokedex/Pokedex';
 const Pokegame = () => {
   return (
-    <div>Pokegame</div>
+    <div className='game-container'>
+        <Pokedex />
+    </div>
   );
 };
 
