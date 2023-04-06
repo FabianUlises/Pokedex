@@ -17,10 +17,13 @@ const Pokegame = () => {
         // Pushing random pokemon to hand1 array
         hand1.push(randPokemon);
     }
+    // Calculating ave experience for each pokedex
+    const exp1 = hand1.reduce((exp, pokemon) => exp + pokemon.base_experience, 0);
+    const exp2 = hand2.reduce((exp, pokemon) => exp + pokemon.base_experience, 0);
     return (
     <div className='game-container'>
-        <Pokedex pokemon={hand1} />
-        <Pokedex pokemon={hand2} />
+        <Pokedex pokemon={hand1} exp={exp1} />
+        <Pokedex pokemon={hand2} exp={exp2} />
     </div>
   );
 };
