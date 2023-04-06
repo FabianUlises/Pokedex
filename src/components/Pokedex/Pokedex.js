@@ -11,6 +11,7 @@ const Pokedex = (props) => {
   ));
   return (
     <div>
+      <h2>Pokedex</h2>
       {displayPokemon}
     </div>
   );
