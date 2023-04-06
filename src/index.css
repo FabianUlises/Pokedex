@@ -13,12 +13,10 @@ body {
   min-height: 100vh;
   background: hsl(210 15% 85%);
   font-family: system-ui, sans-serif;
-  font-size: 62.5%;
 }
 .App {
   inline-size: 100%;
   max-inline-size: 800px;
   margin-inline: auto;
   padding: .8rem .6rem;
-  font-size: .8rem;
 }
