@@ -7,7 +7,7 @@ const Pokedex = (props) => {
   const { pokemon, exp, isWinner } = props;
   // Looping through pokeman and createing pokecard component to display on dom
   const displayPokemon = pokemon.map((item, i) => (
-  <Pokecard name={item.name} type={item.type} exp={item.base_experience} key={i} />
+  <Pokecard name={item.name} type={item.type} exp={item.base_experience} key={i} id={item.id} />
   ));
   // Creating message to display whether winner or loser
   let msg;
