@@ -11,11 +11,12 @@ const Pokedex = (props) => {
   ));
   // Creating message to display whether winner or loser
   let msg;
+  msg = isWinner ? 'You Are The Winner! 😄' : 'you lose 😾';
   return (
     <div className='pokedex'>
       <h2 className='pokedex__title'>Pokedex</h2>
       <p>Total Experience: {exp}</p>
-      <p>{msg}</p>
+      <p className={isWinner ? 'game-winner' : 'game-loser'}>{msg}</p>
       <div className='pokedex-cards'>
         {displayPokemon}
       </div>
