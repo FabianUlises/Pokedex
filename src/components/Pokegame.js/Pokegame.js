@@ -7,7 +7,7 @@ import { pokemon } from './../../assets/Pokemondata';
 const Pokegame = () => {
   return (
     <div className='game-container'>
-        <Pokedex />
+        <Pokedex pokemon={pokemon} />
     </div>
   );
 };
