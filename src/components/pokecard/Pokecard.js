@@ -10,7 +10,7 @@ const Pokecard = (props) => {
     return (
         <div className='pokecard'>
             <h2>{name}</h2>
-            <img src={imgSrc} />
+            <img src={imgSrc} alt={name} />
             <h5>Type: {type}</h5>
             <h5>EXP: {exp}</h5>
         </div>
