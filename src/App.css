@@ -9,13 +9,30 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 2rem;
     align-items: center;
     padding: 1rem;
 }
 .pokedex-container {
     inline-size: 100%;
     max-inline-size: 960px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.pokedex-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .8rem;
+    flex-wrap: wrap;
 }
 .pokecard {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
 }
