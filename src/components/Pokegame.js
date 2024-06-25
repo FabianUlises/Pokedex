@@ -1,5 +1,6 @@
 import React, { Components } from 'react';
 import Pokecard from './Pokecard';
+import Pokedex from './Pokedex';
 const Pokegame = () => {
     // Pokemon data
     const pokemon = [
@@ -15,6 +16,7 @@ const Pokegame = () => {
     return (   
         <div className='pokegame-container'>
             <h1>Pokegame</h1>
+            <Pokedex />
             <Pokecard id={1} name='Charmander' type='fire' exp={132} />
         </div>
     );
