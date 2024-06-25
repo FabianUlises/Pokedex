@@ -3,7 +3,10 @@ import Pokecard from './Pokecard';
 const Pokedex = (props) => {
     return (
         <div>
-            <Pokecard name={props.name}/>
+            <h2>Pokedex</h2>
+            {props.pokemon.map((p) => ( 
+                <Pokecard id={p.id} name={p.name} type={p.type} exp={p.base_experience} />
+            ))}
         </div>
     );
 }
