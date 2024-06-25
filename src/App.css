@@ -20,6 +20,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 1rem;
+    .pokedex-title {
+        font-size: 2.2rem;
+        font-weight: 600;
+        letter-spacing: 1.4px;
+    }
 }
 .pokedex-content {
     display: flex;
@@ -34,8 +40,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    gap: .4rem;
     border: 2px solid hsl(194.7, 53.3%, 79%);
+    padding-block-end: .8rem;
     border-radius: 8px;
     cursor: pointer;
     transition: all 75ms ease;
@@ -43,5 +50,15 @@
         transform: scale(1.025);
         background-color: white;
         border: 2px solid hsl(194.7, 73%, 75%);
+    }
+
+    .pokecard-type {
+        font-weight: 400;
+    }
+    
+    .pokecard-exp {
+        color: hsl(194.7, 60%, 20%);
+        font-size: 14px;
+        font-weight: 200;
     }
 }
