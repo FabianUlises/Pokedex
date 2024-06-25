@@ -15,7 +15,6 @@ const Pokegame = () => {
     ]
     return (   
         <div className='pokegame-container'>
-            <h1>Pokegame</h1>
             <Pokedex />
             <Pokecard id={1} name='Charmander' type='fire' exp={132} />
         </div>
