@@ -29,10 +29,13 @@
     flex-wrap: wrap;
 }
 .pokecard {
+    background-color: hsl(210, 40%, 98%);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    border: 2px solid hsl(194.7, 53.3%, 79%);
+    border-radius: 8px;
 
 }
