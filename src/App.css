@@ -44,12 +44,14 @@
     border: 2px solid hsl(194.7, 53.3%, 79%);
     padding-block-end: .8rem;
     border-radius: 8px;
+    box-shadow: 5px 10px 10px rgba(149, 149, 149, 0.2);
     cursor: pointer;
     transition: all 75ms ease;
     &:hover {
         transform: scale(1.025);
         background-color: white;
         border: 2px solid hsl(194.7, 73%, 75%);
+        box-shadow: 2px 5px 8px rgba(149, 149, 149, 0.2);
     }
 
     .pokecard-type {
