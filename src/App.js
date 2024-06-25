@@ -1,4 +1,5 @@
 import Pokegame from './components/Pokegame';
+import './App.css';
 
 function App() {
   return (
