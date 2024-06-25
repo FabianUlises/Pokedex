@@ -22,7 +22,6 @@ const Pokegame = () => {
         let randInx = Math.floor(Math.random() * hand2.length);
         let randPokemon = hand2.splice(randInx, 1)[0];
         hand1.push(randPokemon);
-        console.log(hand1);
     }
     return (   
         <div className='pokegame-container'>
