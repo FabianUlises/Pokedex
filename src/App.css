@@ -37,5 +37,11 @@
     text-align: center;
     border: 2px solid hsl(194.7, 53.3%, 79%);
     border-radius: 8px;
-
+    cursor: pointer;
+    transition: all 75ms ease;
+    &:hover {
+        transform: scale(1.025);
+        background-color: white;
+        border: 2px solid hsl(194.7, 73%, 75%);
+    }
 }
