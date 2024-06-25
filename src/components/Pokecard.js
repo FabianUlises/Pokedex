@@ -7,11 +7,11 @@ const Pokecard = (props) => {
     const imgSrc = `${pokeApiURL}${padToThree(props.id)}.png`;
     console.log(imgSrc)
     return(
-        <div key={props.id}>
-            <img src={imgSrc} alt={props.name} />
-            <p>{props.exp}</p>
-            <h4>{props.name}</h4>
-            <p>{props.type}</p>
+        <div key={props.id} className="pokecard" >
+            <img src={imgSrc} alt={props.name} className="pokecard-img" />
+            <h4 className="pokecard-title">{props.name}</h4>
+            <p className="pokecard-exp">{props.exp}</p>
+            <p className="pokecard-type">{props.type}</p>
         </div>
     )
 }
