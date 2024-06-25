@@ -28,8 +28,8 @@ const Pokegame = () => {
     let exp2 = hand2.reduce((exp, pokemon) => exp + pokemon.base_experience, 0);
     return (   
         <div className='pokegame-container'>
-            <Pokedex pokemon={hand1} />
-            <Pokedex pokemon={hand2} />
+            <Pokedex pokemon={hand1} exp={exp1} />
+            <Pokedex pokemon={hand2} exp={exp2} />
         </div>
     );
 }
