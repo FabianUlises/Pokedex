@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-const Pokedex = () => {
+import Pokecard from './Pokecard';
+const Pokedex = (props) => {
     return (
         <div>
-            Pokedex
+            <Pokecard name={props.name}/>
         </div>
     );
 }
