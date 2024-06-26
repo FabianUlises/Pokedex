@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import Pokecard from './Pokecard';
 const Pokedex = (props) => {
     return (
-        <div className="pokedex-container">
+        <div className={`${props.dex === 1 ? 'pokedex-1' : 'pokedex-2'} pokedex-container`}>
             <h2 className="pokedex-title">Pokedex</h2>
-            <div pokedex-exp>
+            {props.isWinner ? <div className={`${props.isWinner ? 'green-text' : ''} game-result`}>Winner!</div> : <div className={`${props.isWinner ? '' : 'red-text'} game-result`}>Loser!</div>}
+            <div className="pokedex-exp">
                 {props.exp}
             </div>
             <div className="pokedex-content">

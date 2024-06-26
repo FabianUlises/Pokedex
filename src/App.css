@@ -4,6 +4,27 @@
     justify-content: center;
     align-items: center;
 }
+.pokedex-1 {
+    color:purple;;
+}
+.pokedex-2 {
+    color: orange;
+}
+.green-text {
+    color: green;
+}
+.red-text {
+    color: red;
+    transform: scale(.65);
+}
+.game-result {
+    font-size: 2.2rem;
+    letter-spacing: 2.5px;
+    text-decoration: underline;
+}
+.pokedex-exp {
+    font-size: 1.8rem;
+}
 .pokegame-container {
     inline-size: 100%;
     display: flex;
